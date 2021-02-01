@@ -1,0 +1,18 @@
+<mat-card class="rewards-card">
+   <img mat-card-image src="{{vaki.photo}}" alt="Photo of a {{vaki.name}}">
+   <mat-card-header>
+      <!-- <img class="rewards-header-image" src="{{vaki.photo}}" alt="Photo of {{vaki.name}}"> -->
+      <!-- <div mat-card-avatar class="rewards-header-image"></div> -->
+     <div class="rewards-card-title">
+       <div class="mat-card-title">{{vaki.name}}</div>
+     </div>
+   </mat-card-header>
+   <mat-card-content>
+     <p class="rewards-text-body">
+      {{vaki.summary}}
+     </p>
+   </mat-card-content>
+   <div class="rewards-card-actions">
+     <a mat-button (click)="toPatch(vaki)" >Ver mas</a>
+   </div>
+</mat-card>

@@ -1,0 +1,104 @@
+<div class="content-card-view  mt-4">
+   <div class="card-img">
+     <img src="{{vaki.photo}}" alt="Photo of a {{vaki.name}}">
+   </div>
+   <div class="info-card no-padding-margin">
+     <mat-card>
+       <mat-card-header>
+         <mat-card-title>
+           {{vaki.name}}
+         </mat-card-title>
+         <mat-card-subtitle>
+           <a href="#">ver info</a>
+         </mat-card-subtitle>
+       </mat-card-header>
+       <mat-card-content>
+         <div class="progress-view">
+ 
+           <div class="info-progress">
+             <span> 15 días antes del cierre </span>
+             <span>40% de la meta</span>
+           </div>
+           <div class="percentage-progress">
+             <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+           </div>
+           <div class="info-progress">
+             <span> Meta: </span>
+             <span>COP${{vaki.goal}}</span>
+           </div>
+         </div>
+ 
+         <div class="vaki-collected">
+           <div class="vaki-collected-item">
+             <div class="vaki-collected-icon">
+               icon
+             </div>
+             <div class="vaki-collected-money">
+               <span class="vaki-collected-text">COP $3000.000.000</span>
+               <span>Recaudado</span>
+             </div>
+           </div>
+ 
+           <div class="vaki-collected-item">
+             <div class="vaki-collected-icon">
+               icon
+             </div>
+             <div class="vaki-collected-money">
+               <span class="vaki-collected-text">1.2243</span>
+               <span>Vakers</span>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="vaki-contribute">
+ 
+           <div class="vaki-contribute-item v-coin-select">
+             <mat-form-field appearance="outline">
+               <mat-select matNativeControl>
+                 <mat-option *ngFor="let coin of coins" [value]="coin.value">
+                   {{coin.viewValue}}
+                 </mat-option>
+               </mat-select>
+             </mat-form-field>
+           </div>
+           
+           <div class="vaki-contribute-item v-vakers-input top-unset">
+             <mat-form-field appearance="outline">
+               <span matPrefix>$ &nbsp;</span>
+               <input type="tel" matInput placeholder="555-555-1234">
+             </mat-form-field>
+           </div>
+ 
+           <div class="vaki-contribute-item v-button">
+             <button class="v-button-contribute" mat-raised-button color="primary">APORTAR</button>
+           </div>
+ 
+         </div>
+ 
+         <div class="vaki-rewards-view">
+           <button class="v-button-rewards" mat-stroked-button>
+             VER RECOMPENSAS
+           </button>
+         </div>
+         
+       </mat-card-content>
+       
+       <div class="v-card-actions">
+         <div class="v-b-action">
+           <button  mat-stroked-button>
+             <span class="v-b-text">Impacto</span>
+           </button>
+           <button  mat-stroked-button>
+             <span class="v-b-text">Animales</span>
+           </button>
+           <button  mat-stroked-button>
+             <span class="v-b-text">Causa Social</span>
+           </button>
+         </div>
+         <div>
+           <span>icon</span>
+         </div>
+       </div>
+     </mat-card>
+   </div>
+ </div>

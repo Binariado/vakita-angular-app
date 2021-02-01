@@ -1,0 +1,115 @@
+
+.content-card-view {
+  display: flex;
+  margin-bottom: 4rem;
+  .card-img{
+    max-width: 60%;
+    img{
+      max-width: 100%;
+      // object-fit: contain;
+      height: auto;
+      width: 100%;
+      max-height: 400px;
+      -o-object-position: center center;
+      object-position: center center;
+
+    }
+  }
+  .info-card{
+    width: 40%;
+    .mat-card-header{
+      margin: 0;
+    }
+    .mat-card-content{
+      .progress-view{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        .info-progress{
+          display: flex;
+          :nth-child(1){
+            flex-grow: 1;
+          }
+        }
+        .percentage-progress{
+          margin: 0.5rem 0 0.5rem 0;
+        }
+      }
+      .vaki-collected {
+        display: flex;
+        margin: 1rem 0 1rem 0;
+        .vaki-collected-item {
+          width: 100%;
+          display: flex;
+          .vaki-collected-icon{
+            margin-right: 0.4rem;
+          }
+          .vaki-collected-money{
+            display: flex;
+            flex-direction: column;
+            .vaki-collected-text{
+              font-size: 18px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .vaki-contribute{
+        display: flex;
+        justify-content: space-between;
+        .vaki-contribute-item {
+          // width: 100%;
+          // flex: 1 1 auto!important;
+          .mat-form-field{
+            width: 100%;
+            .mat-form-field-wrapper{
+              padding: 0;
+            }
+          }
+        }
+        .v-coin-select{
+          width: 20%;
+        }
+        .v-vakers-input{
+          width: 35%;
+        }
+        .v-button{
+          width: 35%;
+          display: flex;
+          .v-button-contribute{
+            flex-grow: 1;
+          }
+        }
+      }
+
+      .vaki-rewards-view{
+        display: flex;
+        width: 100%;
+        margin-top: 1rem;
+        .v-button-rewards{
+          width: 100%;
+        }
+      }
+    }
+    .v-card-actions{
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .v-b-action{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        button{
+          border-radius: 25rem;
+          .v-b-text{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,1 +1,19 @@
-<p>card-rewards works!</p>
+<mat-card class="rewards-card">
+   <mat-card-header>
+     <div class="rewards-card-title">
+       <div class="mat-card-title">{{reward.title}}</div>
+     </div>
+     <img class="rewards-header-image" src="{{reward.img}}" alt="Photo of {{reward.title}}">
+   </mat-card-header>
+   <mat-card-content>
+     <p class="rewards-text-body">
+      {{reward.description}}
+     </p>
+   </mat-card-content>
+   <div class="rewards-card-actions">
+     <button class="rewards-card-wear" mat-stroked-button>
+       {{reward.value}}
+     </button>
+   </div>
+</mat-card>
+

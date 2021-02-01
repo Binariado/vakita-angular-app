@@ -1,0 +1,12 @@
+<div class="conte-list-rewards">
+
+   <div class="title-rewards">
+      Vakis:
+   </div>
+
+   <div class="list-rewards no-padding-margin">
+      <div class="vaki-capa-rewards"  *ngFor="let vaki of vakis | async">
+         <vaki-challenge-vaki-card [vaki]="vaki"></vaki-challenge-vaki-card>
+      </div>
+   </div>
+</div>

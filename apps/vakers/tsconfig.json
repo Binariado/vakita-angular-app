@@ -12,5 +12,12 @@
     {
       "path": "./tsconfig.editor.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@app/*": ["./app/*"],
+      "@layout/*": ["./app/template/*"]
+    }
+  }
 }
